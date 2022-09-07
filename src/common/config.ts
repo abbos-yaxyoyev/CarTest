@@ -10,7 +10,7 @@ dotenv.config({
 export const ENV = {
   DB_URL: process.env.DB_URL || "mongodb+srv://mongofastify:nodefastify@cluster0.ipnzs.mongodb.net/CarTest?retryWrites=true&w=majority",
   HOST: process.env.HOST || '0.0.0.0',
-  EMPLOYEE_PORT: parseInt(process.env.EMPLOYEE_PORT) || 3000,
+  PORT: parseInt(process.env.PORT) || 3000,
   USER_PORT: parseInt(process.env.USER_PORT) || 4000,
   PAYSYS_PORT: parseInt(process.env.PAYSYS_PORT) || 2000,
   UPLOAD_PORT: parseInt(process.env.UPLOAD_PORT) || 5000,

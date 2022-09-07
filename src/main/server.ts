@@ -32,7 +32,7 @@ async function start() {
   try {
     const options = {
       host: ENV.HOST,
-      port: ENV.EMPLOYEE_PORT,
+      port: ENV.PORT,
     };
     await server.listen(options);
     server.log.info(server.route);
