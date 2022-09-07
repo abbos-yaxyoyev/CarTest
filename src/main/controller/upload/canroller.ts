@@ -13,7 +13,7 @@ export async function uploadFileCantroller(request, reply) {
 
     const url = 'img-' + file.md5 + path.extname(file.name);
 
-    const direction = path.join(__dirname, '../../');
+    const direction = path.join(__dirname, '../../../../');
 
     const wstream = fs.createWriteStream(direction + 'public/' + url);
 
