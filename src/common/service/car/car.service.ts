@@ -79,9 +79,10 @@ class CarService extends CommonServices<Car> {
 
           imgUrl: 1,
 
-          imgInnerUrl: 1,
 
-          imgAutsideUrl: 1,
+          imgUrlInside: 1,
+
+          imgUrlAutside: 1,
 
           marka: {
             _id: 1,
