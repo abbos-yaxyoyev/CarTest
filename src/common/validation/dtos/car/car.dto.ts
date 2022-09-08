@@ -8,12 +8,14 @@ export class CarDtoGroup extends BaseDtoGroup {
 
 export class CarGetDto extends PagingDto {
 
-  @IsMongoId(
-    {
-      groups: [CarDtoGroup.PAGENATION,],
-    }
-  )
+  @IsOptional({
+    groups: [CarDtoGroup.PAGENATION]
+  })
+  @IsMongoId({
+    groups: [CarDtoGroup.PAGENATION,],
+  })
   categoryId: string;
+
 }
 
 export class CarDto extends BaseDto {

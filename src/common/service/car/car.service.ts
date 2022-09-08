@@ -120,8 +120,11 @@ class CarService extends CommonServices<Car> {
 
       const query: any = {
         isDeleted: false,
-        categoryId: new Types.ObjectId(dto.categoryId)
       };
+
+      if (dto.categoryId) {
+        query.categoryId = new Types.ObjectId(dto.categoryId);
+      }
 
       const $lookup = {
         $lookup: {
